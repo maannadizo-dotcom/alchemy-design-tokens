@@ -1,0 +1,116 @@
+{
+  "$schema": "https://schemas.tokens.studio/v1",
+  "$description": "Emotion themes for Alchemy: clarity, focus, reflection, resolve, transformation",
+  "$themes": [
+    {
+      "id": "clarity",
+      "selectedTokenSets": {
+        "core": "enabled",
+        "components": "enabled",
+        "motion": "enabled",
+        "emotion/clarity": "enabled"
+      },
+      "extends": null
+    },
+    {
+      "id": "focus",
+      "selectedTokenSets": {
+        "core": "enabled",
+        "components": "enabled",
+        "motion": "enabled",
+        "emotion/focus": "enabled"
+      },
+      "extends": null
+    },
+    {
+      "id": "reflection",
+      "selectedTokenSets": {
+        "core": "enabled",
+        "components": "enabled",
+        "motion": "enabled",
+        "emotion/reflection": "enabled"
+      },
+      "extends": null
+    },
+    {
+      "id": "resolve",
+      "selectedTokenSets": {
+        "core": "enabled",
+        "components": "enabled",
+        "motion": "enabled",
+        "emotion/resolve": "enabled"
+      },
+      "extends": null
+    },
+    {
+      "id": "transformation",
+      "selectedTokenSets": {
+        "core": "enabled",
+        "components": "enabled",
+        "motion": "enabled",
+        "emotion/transformation": "enabled"
+      },
+      "extends": null
+    }
+  ],
+  "emotion": {
+    "clarity": {
+      "color": {
+        "background": { "$type": "color", "$value": "#C5D7E5" },
+        "surface": { "$type": "color", "$value": "{color.neutral.light}" },
+        "text": { "$type": "color", "$value": "{color.neutral.dark}" },
+        "primary": { "$type": "color", "$value": "#C5D7E5" },
+        "accent": { "$type": "color", "$value": "{color.accent.secondary}" }
+      },
+      "gradient": {
+        "background": { "$type": "gradient", "$value": "linear-gradient(180deg, #C5D7E5 0%, #F7F9FA 100%)" }
+      }
+    },
+    "focus": {
+      "color": {
+        "background": { "$type": "color", "$value": "#9FBEE5" },
+        "surface": { "$type": "color", "$value": "{color.neutral.light}" },
+        "text": { "$type": "color", "$value": "{color.neutral.dark}" },
+        "primary": { "$type": "color", "$value": "#9FBEE5" },
+        "accent": { "$type": "color", "$value": "{color.accent.secondary}" }
+      },
+      "gradient": {
+        "background": { "$type": "gradient", "$value": "linear-gradient(180deg, #9FBEE5 0%, #C5D7E5 100%)" }
+      }
+    },
+    "reflection": {
+      "color": {
+        "background": { "$type": "color", "$value": "#A9B8BA" },
+        "surface": { "$type": "color", "$value": "{color.neutral.light}" },
+        "text": { "$type": "color", "$value": "{color.neutral.dark}" },
+        "primary": { "$type": "color", "$value": "#A9B8BA" },
+        "accent": { "$type": "color", "$value": "{color.accent.primary}" }
+      }
+    },
+    "resolve": {
+      "color": {
+        "background": { "$type": "color", "$value": "#CBB5E8" },
+        "surface": { "$type": "color", "$value": "{color.neutral.light}" },
+        "text": { "$type": "color", "$value": "{color.neutral.dark}" },
+        "primary": { "$type": "color", "$value": "#CBB5E8" },
+        "accent": { "$type": "color", "$value": "{color.accent.secondary}" }
+      },
+      "effect": {
+        "focusGlow": {
+          "$type": "boxShadow",
+          "$value": { "x": 0, "y": 0, "blur": 12, "spread": 0, "color": "rgba(203,181,232,0.40)" }
+        }
+      }
+    },
+    "transformation": {
+      "color": {
+        "background": { "$type": "color", "$value": "{emotion/resolve.color.background}" },
+        "surface": { "$type": "color", "$value": "{color.neutral.light}" },
+        "text": { "$type": "color", "$value": "{color.neutral.dark}" }
+      },
+      "gradient": {
+        "background": { "$type": "gradient", "$value": "linear-gradient(180deg, #C5D7E5 0%, #CBB5E8 100%)" }
+      }
+    }
+  }
+}
