@@ -1,0 +1,81 @@
+{
+  "$metadata": {
+    "brand": "Alchemy",
+    "description": "Motion timing, easing, and behaviors for emotional states",
+    "engine": "tokens-studio",
+    "version": "1.0.0",
+    "updated": "2025-10-17"
+  },
+  "motion": {
+    "duration": {
+      "base": {
+        "$type": "duration",
+        "$value": "200ms"
+      },
+      "page": {
+        "$type": "duration",
+        "$value": "400ms"
+      },
+      "emotionShift": {
+        "$type": "duration",
+        "$value": "600ms"
+      }
+    },
+    "easing": {
+      "easeOut": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.25,
+          0.1,
+          0.25,
+          1
+        ]
+      },
+      "easeInOut": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.42,
+          0,
+          0.58,
+          1
+        ]
+      },
+      "breath": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.2,
+          0.8,
+          0.3,
+          1
+        ]
+      }
+    },
+    "presets": {
+      "enterFade": {
+        "$type": "composition",
+        "$value": {
+          "duration": "{motion.duration.base}",
+          "easing": "{motion.easing.easeOut}",
+          "opacityFrom": 0,
+          "opacityTo": 1
+        }
+      },
+      "pageTransition": {
+        "$type": "composition",
+        "$value": {
+          "duration": "{motion.duration.page}",
+          "easing": "{motion.easing.easeInOut}",
+          "type": "opacity+position"
+        }
+      },
+      "emotionShift": {
+        "$type": "composition",
+        "$value": {
+          "duration": "{motion.duration.emotionShift}",
+          "easing": "{motion.easing.breath}",
+          "type": "crossfade+color"
+        }
+      }
+    }
+  }
+}

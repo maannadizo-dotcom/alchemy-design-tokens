@@ -1,0 +1,85 @@
+{
+  "$metadata": {
+    "brand": "Alchemy",
+    "description": "Composable component tokens mapped to emotion variables",
+    "engine": "tokens-studio",
+    "version": "1.0.0",
+    "updated": "2025-10-17"
+  },
+  "component": {
+    "button": {
+      "primary": {
+        "$type": "composition",
+        "$value": {
+          "fill": "{emotion/clarity.color.primary}",
+          "textColor": "{emotion/clarity.color.text}",
+          "radius": "{core.radius.button}",
+          "paddingY": "{core.spacing.sm}",
+          "paddingX": "{core.spacing.md}",
+          "shadow": "{core.shadow.soft}"
+        }
+      },
+      "accent": {
+        "$type": "composition",
+        "$value": {
+          "fill": "{core.color.accent.primary}",
+          "textColor": "{core.color.neutral.dark}",
+          "radius": "{core.radius.button}",
+          "paddingY": "{core.spacing.sm}",
+          "paddingX": "{core.spacing.md}",
+          "shadow": "{core.shadow.medium}"
+        }
+      }
+    },
+    "card": {
+      "base": {
+        "$type": "composition",
+        "$value": {
+          "fill": "{emotion/clarity.color.surface}",
+          "textColor": "{emotion/clarity.color.text}",
+          "radius": "{core.radius.card}",
+          "shadow": "{core.shadow.soft}",
+          "padding": "{core.spacing.lg}"
+        }
+      }
+    },
+    "input": {
+      "field": {
+        "$type": "composition",
+        "$value": {
+          "fill": "{core.color.neutral.light}",
+          "textColor": "{core.color.neutral.dark}",
+          "radius": "{core.radius.base}",
+          "paddingY": "{core.spacing.sm}",
+          "paddingX": "{core.spacing.md}",
+          "borderColor": "{core.color.neutral.mid}"
+        }
+      },
+      "focus": {
+        "$type": "composition",
+        "$value": {
+          "borderColor": "{emotion/resolve.color.primary}",
+          "shadow": "{emotion/resolve.effect.focusGlow}"
+        }
+      }
+    },
+    "typography": {
+      "hero": {
+        "$type": "typography",
+        "$value": "{core.typography.hero}"
+      },
+      "heading": {
+        "$type": "typography",
+        "$value": "{core.typography.heading}"
+      },
+      "body": {
+        "$type": "typography",
+        "$value": "{core.typography.body}"
+      },
+      "microcopy": {
+        "$type": "typography",
+        "$value": "{core.typography.microcopy}"
+      }
+    }
+  }
+}
