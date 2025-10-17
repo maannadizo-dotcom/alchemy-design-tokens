@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.tokens.studio/v1",
+  "$description": "Core Alchemy tokens: neutrals, typography, spacing, shadows, radii",
+  "color": {
+    "neutral": {
+      "light": { "$type": "color", "$value": "#F7F9FA" },
+      "mid":   { "$type": "color", "$value": "#E0E4E6" },
+      "dark":  { "$type": "color", "$value": "#101820" }
+    },
+    "accent": {
+      "primary": { "$type": "color", "$value": "#CBB5E8" },
+      "secondary": { "$type": "color", "$value": "#9FBEE5" }
+    }
+  },
+  "typography": {
+    "hero": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Satoshi",
+        "fontWeight": 600,
+        "fontSize": "56px",
+        "lineHeight": "110%",
+        "letterSpacing": "-0.5%"
+      }
+    },
+    "heading": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontWeight": 500,
+        "fontSize": "32px",
+        "lineHeight": "130%"
+      }
+    },
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "160%"
+      }
+    },
+    "microcopy": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "fontSize": "13px",
+        "lineHeight": "150%"
+      }
+    }
+  },
+  "radius": {
+    "base": { "$type": "borderRadius", "$value": "12px" },
+    "card": { "$type": "borderRadius", "$value": "16px" },
+    "button": { "$type": "borderRadius", "$value": "8px" }
+  },
+  "spacing": {
+    "unit": { "$type": "spacing", "$value": "8px" },
+    "xs": { "$type": "spacing", "$value": "4px" },
+    "sm": { "$type": "spacing", "$value": "8px" },
+    "md": { "$type": "spacing", "$value": "16px" },
+    "lg": { "$type": "spacing", "$value": "24px" },
+    "xl": { "$type": "spacing", "$value": "40px" }
+  },
+  "shadow": {
+    "soft": { "$type": "boxShadow", "$value": { "x": 0, "y": 8, "blur": 24, "spread": 0, "color": "rgba(0,0,0,0.04)" } },
+    "medium": { "$type": "boxShadow", "$value": { "x": 0, "y": 12, "blur": 32, "spread": 0, "color": "rgba(0,0,0,0.08)" } }
+  }
+}
