@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.tokens.studio/v1",
+  "$description": "Component compositions for Alchemy (buttons, cards, inputs)",
+  "component": {
+    "button": {
+      "primary": {
+        "$type": "composition",
+        "$value": {
+          "fill": "{color.accent.primary}",
+          "textColor": "{color.neutral.dark}",
+          "radius": "{radius.button}",
+          "paddingY": "{spacing.sm}",
+          "paddingX": "{spacing.md}",
+          "shadow": "{shadow.soft}"
+        }
+      },
+      "accent": {
+        "$type": "composition",
+        "$value": {
+          "fill": "{color.accent.secondary}",
+          "textColor": "{color.neutral.dark}",
+          "radius": "{radius.button}",
+          "paddingY": "{spacing.sm}",
+          "paddingX": "{spacing.md}",
+          "shadow": "{shadow.medium}"
+        }
+      }
+    },
+    "card": {
+      "base": {
+        "$type": "composition",
+        "$value": {
+          "fill": "{color.neutral.light}",
+          "textColor": "{color.neutral.dark}",
+          "radius": "{radius.card}",
+          "shadow": "{shadow.soft}",
+          "padding": "{spacing.lg}"
+        }
+      }
+    },
+    "input": {
+      "field": {
+        "$type": "composition",
+        "$value": {
+          "fill": "{color.neutral.light}",
+          "textColor": "{color.neutral.dark}",
+          "radius": "{radius.base}",
+          "paddingY": "{spacing.sm}",
+          "paddingX": "{spacing.md}",
+          "borderColor": "{color.neutral.mid}"
+        }
+      },
+      "focus": {
+        "$type": "composition",
+        "$value": {
+          "borderColor": "{color.accent.primary}",
+          "shadow": "{shadow.soft}"
+        }
+      }
+    },
+    "typography": {
+      "hero": { "$type": "typography", "$value": "{typography.hero}" },
+      "heading": { "$type": "typography", "$value": "{typography.heading}" },
+      "body": { "$type": "typography", "$value": "{typography.body}" },
+      "microcopy": { "$type": "typography", "$value": "{typography.microcopy}" }
+    }
+  }
+}
