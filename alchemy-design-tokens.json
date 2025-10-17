@@ -1,0 +1,119 @@
+{
+  "$schema": "https://schemas.tokens.studio/schema.json",
+  "values": {
+    "color": {
+      "base": {
+        "primary": { "value": "#C5D7E5", "comment": "Clarity - calm base" },
+        "accent": { "value": "#CBB5E8", "comment": "Resolve - emotional highlight" },
+        "neutralLight": { "value": "#F7F9FA" },
+        "neutralMid": { "value": "#E0E4E6" },
+        "neutralDark": { "value": "#101820" },
+        "background": { "value": "#F7F9FA" },
+        "textPrimary": { "value": "#101820" }
+      },
+      "emotions": {
+        "clarity": { "value": "#C5D7E5" },
+        "focus": { "value": "#9FBEE5" },
+        "reflection": { "value": "#A9B8BA" },
+        "resolve": { "value": "#CBB5E8" },
+        "transformation": {
+          "value": "linear-gradient(180deg, #C5D7E5 0%, #CBB5E8 100%)"
+        }
+      }
+    },
+    "typography": {
+      "hero": {
+        "value": {
+          "fontFamily": "Satoshi",
+          "fontWeight": "600",
+          "fontSize": "56px",
+          "lineHeight": "110%",
+          "letterSpacing": "-0.5px"
+        }
+      },
+      "heading": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "500",
+          "fontSize": "32px",
+          "lineHeight": "130%"
+        }
+      },
+      "body": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "fontSize": "16px",
+          "lineHeight": "160%"
+        }
+      },
+      "microcopy": {
+        "value": {
+          "fontFamily": "Inter",
+          "fontWeight": "400",
+          "fontSize": "13px",
+          "lineHeight": "150%",
+          "opacity": "0.8"
+        }
+      }
+    },
+    "radius": {
+      "base": { "value": "12px" },
+      "card": { "value": "16px" },
+      "button": { "value": "8px" }
+    },
+    "spacing": {
+      "unit": { "value": "8px" },
+      "xs": { "value": "4px" },
+      "sm": { "value": "8px" },
+      "md": { "value": "16px" },
+      "lg": { "value": "24px" },
+      "xl": { "value": "40px" }
+    },
+    "motion": {
+      "easeOut": { "value": "cubic-bezier(0.25, 0.1, 0.25, 1)" },
+      "easeInOut": { "value": "cubic-bezier(0.42, 0, 0.58, 1)" },
+      "baseDuration": { "value": "200ms" },
+      "pageTransition": { "value": "400ms" }
+    },
+    "opacity": {
+      "disabled": { "value": 0.4 },
+      "overlay": { "value": 0.9 }
+    },
+    "effects": {
+      "softShadow": {
+        "type": "dropShadow",
+        "value": {
+          "x": "0",
+          "y": "8px",
+          "blur": "24px",
+          "color": "rgba(0,0,0,0.04)"
+        }
+      },
+      "mediumShadow": {
+        "type": "dropShadow",
+        "value": {
+          "x": "0",
+          "y": "12px",
+          "blur": "32px",
+          "color": "rgba(0,0,0,0.08)"
+        }
+      },
+      "focusGlow": {
+        "type": "innerShadow",
+        "value": {
+          "x": "0",
+          "y": "0",
+          "blur": "12px",
+          "color": "rgba(203,181,232,0.4)"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "brand": "Alchemy",
+    "updated": "2025-10-17",
+    "description": "Unified design tokens for Alchemy MVP"
+  }
+}
